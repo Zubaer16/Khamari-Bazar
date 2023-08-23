@@ -55,7 +55,15 @@ const updatCartList = (
         <a href="#" class="photo"><img src="${product_img}" class="cart-thumb" alt="" /></a>
         <h6><a href="#">${product_name}</a></h6>
         <p style="font-size:1.5rem;"><span style="color:red;cursor:pointer" id="minus">-</span> 1 <span style="color:red;cursor:pointer" id="plus">+</span></p>
+        <div style="display:flex;justify-content:space-around;align-items:center;">
+        
         <p>${product_quantity} - <span class="price">${product_price}</span></p>
+          <button class="btn btn-default hvr-hover btn-cart" style="color:white;">Remove</button>
+        
+        </div>
+        
+        
+        
         `
     cartList.appendChild(liElement)
     // console.log(getTotol());
